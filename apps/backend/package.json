@@ -1,0 +1,9 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "devDependencies": {
+    "@trifuszkamillaphoto/ts-config": "workspace:*"
+  }
+}
