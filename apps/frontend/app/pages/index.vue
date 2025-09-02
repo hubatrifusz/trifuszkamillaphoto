@@ -9,6 +9,9 @@
         fotókon.
       </h1>
     </section>
+    <section id="images" class="w-full columns-4">
+
+    </section>
   </div>
 </template>
 
