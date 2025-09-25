@@ -1,43 +1,39 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-
-body {
-}
-
 :root {
   /* Main Beige Palette */
   --color-main-100: #fff8f0;
-  --color-main-200: #fff0e0;
-  --color-main-300: #ffe6cc;
-  --color-main-400: #ffdcc0;
-  --color-main-500: #ffd2b3;
-  --color-main-600: #ffc6a3;
-  --color-main-700: #ffba91;
-  --color-main-800: #ffad7f;
-  --color-main-900: #ffa16a;
+  --color-main-200: #fff2e3;
+  --color-main-300: #ffe9d2;
+  --color-main-400: #ffe0c0;
+  --color-main-500: #ffd6ad;
+  --color-main-600: #ffcca0;
+  --color-main-700: #ffc093;
+  --color-main-800: #ffb386;
+  --color-main-900: #8c5e42; /* darker but gradient preserved */
 
   /* Dark Olive Green Accent (#406D55) */
-  --color-accent-100: #e2ede7;
-  --color-accent-200: #c4dccf;
-  --color-accent-300: #a5cbb7;
-  --color-accent-400: #87ba9f;
-  --color-accent-500: #68aa87;
-  --color-accent-600: #4e886a;
+  --color-accent-100: #e3ede6;
+  --color-accent-200: #c7dccf;
+  --color-accent-300: #a8cbb7;
+  --color-accent-400: #8cb99f;
+  --color-accent-500: #6fa887;
+  --color-accent-600: #54886a;
   --color-accent-700: #406d55; /* main accent */
-  --color-accent-800: #355645;
-  --color-accent-900: #2a4236;
+  --color-accent-800: #335544;
+  --color-accent-900: #1d3327; /* darker but smooth */
 
   /* Secondary Coral Accent */
   --color-secondary-100: #fff2f0;
-  --color-secondary-200: #ffe5e0;
-  --color-secondary-300: #ffccc3;
-  --color-secondary-400: #ffb3a6;
-  --color-secondary-500: #ff9989;
-  --color-secondary-600: #ff806e;
-  --color-secondary-700: #ff6653;
+  --color-secondary-200: #ffe6e2;
+  --color-secondary-300: #ffccc5;
+  --color-secondary-400: #ffb3a8;
+  --color-secondary-500: #ff998b;
+  --color-secondary-600: #ff7f6f;
+  --color-secondary-700: #ff6654;
   --color-secondary-800: #ff4d3a;
-  --color-secondary-900: #ff331f;
+  --color-secondary-900: #66211b; /* smooth gradient */
 
   /* Neutral Grays */
   --color-neutral-100: #f9f9f9;
@@ -48,29 +44,29 @@ body {
   --color-neutral-600: #a8a8a8;
   --color-neutral-700: #878787;
   --color-neutral-800: #666666;
-  --color-neutral-900: #444444;
+  --color-neutral-900: #2b2b2b; /* smooth dark gray */
 
   /* Soft Brown for fur/details */
   --color-tertiary-100: #fdf7f2;
-  --color-tertiary-200: #f9efe5;
-  --color-tertiary-300: #f3e2d1;
-  --color-tertiary-400: #ecd3b8;
-  --color-tertiary-500: #e4c49f;
-  --color-tertiary-600: #d7b284;
-  --color-tertiary-700: #caa369;
-  --color-tertiary-800: #bb9160;
-  --color-tertiary-900: #a67a4b;
+  --color-tertiary-200: #f9eee6;
+  --color-tertiary-300: #f4e3d2;
+  --color-tertiary-400: #edd5bd;
+  --color-tertiary-500: #e5c7a8;
+  --color-tertiary-600: #d8b18e;
+  --color-tertiary-700: #cca077;
+  --color-tertiary-800: #b88c63;
+  --color-tertiary-900: #5e3d2e; /* smooth gradient */
 
-    /* Success Green (harmonized with accent) */
+  /* Success Green (harmonized with accent) */
   --color-success-100: #e6f5eb;
   --color-success-200: #ccead6;
-  --color-success-300: #b3dfc2;
-  --color-success-400: #99d3ad;
+  --color-success-300: #b3dfc1;
+  --color-success-400: #99d4ac;
   --color-success-500: #80c898; /* main success */
   --color-success-600: #66ad7a;
   --color-success-700: #4d9060;
   --color-success-800: #356845;
-  --color-success-900: #1a3f29;
+  --color-success-900: #17301c; /* smooth dark green */
 
   /* Error Red (muted, natural) */
   --color-error-100: #fdecea;
@@ -81,5 +77,40 @@ body {
   --color-error-600: #d97268;
   --color-error-700: #b8594f;
   --color-error-800: #94403a;
-  --color-error-900: #6e2a27;
+  --color-error-900: #4c1d17; /* smooth dark red */
+
+  /* Primary and secondary */
+  --ui-primary: var(--color-accent-700); /* Olive accent */
+  --ui-secondary: var(--color-main-600); /* Beige main, slightly darker */
+
+  /* Backgrounds */
+  --ui-bg: var(--color-main-100); /* Lightest beige for overall background */
+  --ui-bg-elevated: var(
+    --color-main-200
+  ); /* Slightly darker beige for cards, panels */
+
+  /* Text */
+  --ui-text: var(--color-main-900); /* Dark beige/brown for main text */
+  --ui-text-muted: var(
+    --color-main-500
+  ); /* Mid-tone beige for secondary text */
+  --ui-text-highlighted: var(
+    --color-accent-600
+  ); /* Olive accent for highlights */
+
+  /* Borders */
+  --ui-border-accented: var(
+    --color-accent-300
+  ); /* Light olive for subtle borders */
+
+  /* Feedback */
+  --ui-success: var(--color-success-500); /* Main success green */
+  --ui-success-muted: var(--color-success-200); /* Light success background */
+  --ui-error: var(--color-error-500); /* Main error red */
+  --ui-error-muted: var(--color-error-200); /* Light error background */
+}
+
+button {
+  cursor: pointer;
+  color: var(--color-accent-100);
 }
