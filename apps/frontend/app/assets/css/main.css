@@ -1,40 +1,85 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-* {
-  font-family: "Nunito Sans";
-}
 
 body {
-  background-color: var(--color-primary-100);
-  color: var(--color-primary-900);
-
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 :root {
-  /* Primary colors */
-  --color-primary-100: #e2decb;
-  --color-primary-200: #cfc9aa;
-  --color-primary-300: #b5ad87;
-  --color-primary-400: #a2986d;
-  --color-primary-500: #877f5a;
-  --color-primary-600: #686245;
-  --color-primary-700: #504b35;
-  --color-primary-800: #3d3a29;
-  --color-primary-900: #28251b;
-}
+  /* Main Beige Palette */
+  --color-main-100: #fff8f0;
+  --color-main-200: #fff0e0;
+  --color-main-300: #ffe6cc;
+  --color-main-400: #ffdcc0;
+  --color-main-500: #ffd2b3;
+  --color-main-600: #ffc6a3;
+  --color-main-700: #ffba91;
+  --color-main-800: #ffad7f;
+  --color-main-900: #ffa16a;
 
-@font-face {
-  font-family: "Nunito Sans";
-  src: url("../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf")
-    format("ttf");
-}
+  /* Dark Olive Green Accent (#406D55) */
+  --color-accent-100: #e2ede7;
+  --color-accent-200: #c4dccf;
+  --color-accent-300: #a5cbb7;
+  --color-accent-400: #87ba9f;
+  --color-accent-500: #68aa87;
+  --color-accent-600: #4e886a;
+  --color-accent-700: #406d55; /* main accent */
+  --color-accent-800: #355645;
+  --color-accent-900: #2a4236;
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
-    format("ttf");
+  /* Secondary Coral Accent */
+  --color-secondary-100: #fff2f0;
+  --color-secondary-200: #ffe5e0;
+  --color-secondary-300: #ffccc3;
+  --color-secondary-400: #ffb3a6;
+  --color-secondary-500: #ff9989;
+  --color-secondary-600: #ff806e;
+  --color-secondary-700: #ff6653;
+  --color-secondary-800: #ff4d3a;
+  --color-secondary-900: #ff331f;
+
+  /* Neutral Grays */
+  --color-neutral-100: #f9f9f9;
+  --color-neutral-200: #f2f2f2;
+  --color-neutral-300: #e5e5e5;
+  --color-neutral-400: #d8d8d8;
+  --color-neutral-500: #c9c9c9;
+  --color-neutral-600: #a8a8a8;
+  --color-neutral-700: #878787;
+  --color-neutral-800: #666666;
+  --color-neutral-900: #444444;
+
+  /* Soft Brown for fur/details */
+  --color-tertiary-100: #fdf7f2;
+  --color-tertiary-200: #f9efe5;
+  --color-tertiary-300: #f3e2d1;
+  --color-tertiary-400: #ecd3b8;
+  --color-tertiary-500: #e4c49f;
+  --color-tertiary-600: #d7b284;
+  --color-tertiary-700: #caa369;
+  --color-tertiary-800: #bb9160;
+  --color-tertiary-900: #a67a4b;
+
+    /* Success Green (harmonized with accent) */
+  --color-success-100: #e6f5eb;
+  --color-success-200: #ccead6;
+  --color-success-300: #b3dfc2;
+  --color-success-400: #99d3ad;
+  --color-success-500: #80c898; /* main success */
+  --color-success-600: #66ad7a;
+  --color-success-700: #4d9060;
+  --color-success-800: #356845;
+  --color-success-900: #1a3f29;
+
+  /* Error Red (muted, natural) */
+  --color-error-100: #fdecea;
+  --color-error-200: #f9d6d3;
+  --color-error-300: #f4bfb8;
+  --color-error-400: #f0a79d;
+  --color-error-500: #eb8f82; /* main error */
+  --color-error-600: #d97268;
+  --color-error-700: #b8594f;
+  --color-error-800: #94403a;
+  --color-error-900: #6e2a27;
 }
