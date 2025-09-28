@@ -1,7 +1,7 @@
 {
-  "name": "frontend",
-  "private": true,
+  "name": "nuxt-app",
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,14 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/ui": "^3.3.0",
-    "@tailwindcss/vite": "^4.1.11",
-    "nuxt": "^4.0.1",
-    "tailwindcss": "^4.1.11",
-    "vue": "^3.5.18",
+    "@nuxt/fonts": "^0.11.4",
+    "@nuxt/ui": "^4.0.0",
+    "@tailwindcss/vite": "^4.1.13",
+    "nuxt": "^4.1.2",
+    "vue": "^3.5.21",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@trifuszkamillaphoto/ts-config": "workspace:*"
+    "@iconify-json/lucide": "^1.2.68",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13"
   }
 }
