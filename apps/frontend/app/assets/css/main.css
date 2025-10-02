@@ -25,7 +25,7 @@ h6 {
   --color-main-600: #eebf8d;
   --color-main-700: #dda777;
   --color-main-800: #b9815b;
-  --color-main-900: #7a5137;
+  --color-main-900: #4b2f1d;
 
   /* Dark Olive Green Accent */
   --color-accent-100: #e8f0eb;
@@ -106,7 +106,7 @@ h6 {
 
 :root {
   /* Primary and secondary */
-  --ui-primary: var(--color-accent-700); /* Olive accent */
+  --ui-primary: var(--color-accent-900); /* Olive accent */
   --ui-secondary: var(--color-main-600); /* Beige main, slightly darker */
 
   /* Backgrounds */
@@ -138,5 +138,5 @@ button {
 
 body {
   background-color: var(--color-main-200);
-  padding: 2rem;
+  padding: 3rem;
 }
